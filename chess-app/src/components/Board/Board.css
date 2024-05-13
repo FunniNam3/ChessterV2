@@ -1,0 +1,53 @@
+.Box-1{
+    position:relative;
+    height: calc(80vmin / 8);
+    width: calc(80vmin / 8);
+    background-color: cadetblue;
+}
+
+.Box-2{
+    position:relative;
+    height: calc(80vmin / 8);
+    width: calc(80vmin / 8);
+    background-color: green;
+}
+
+.Row{
+    position:relative;
+    height: calc(80vmin / 8);
+    width: 80vmin;
+    display: flex;
+}
+
+.Board{
+    height: 80vmin;
+    width: 80vmin;
+}
+
+.MoveSquare{
+    position:relative;
+    border-color: transparent;
+    background: transparent;
+    height: calc(80vmin / 8);
+    width: calc(80vmin / 8);
+    z-index: 1;
+}
+
+.MSdot{
+    position:relative;
+    margin: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    height: calc(80vmin / 8 / 3);
+    background-color: grey;
+}
+
+.TSdot{
+    position:relative;
+    bottom: calc(80vmin / 8) ;
+    margin: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    height: calc(80vmin / 8 / 3);
+    background-color: rgb(255, 0, 0);
+}

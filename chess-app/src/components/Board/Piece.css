@@ -1,0 +1,108 @@
+.p{
+    height: 100%;
+    width: 100%;
+    background-image: url(../../svgs/Chess_pdt45.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border-color: transparent;
+}
+.b{
+    height: 100%;
+    width: 100%;
+    background-image: url(../../svgs/Chess_bdt45.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border-color: transparent;
+}
+.n{
+    height: 100%;
+    width: 100%;
+    background-image: url(../../svgs/Chess_ndt45.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border-color: transparent;
+}
+.r{
+    height: 100%;
+    width: 100%;
+    background-image: url(../../svgs/Chess_rdt45.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border-color: transparent;
+}
+.q{
+    height: 100%;
+    width: 100%;
+    background-image: url(../../svgs/Chess_qdt45.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border-color: transparent;
+}
+.k{
+    height: 100%;
+    width: 100%;
+    background-image: url(../../svgs/Chess_kdt45.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border-color: transparent;
+}
+.P{
+    height: 100%;
+    width: 100%;
+    background-image: url(../../svgs/Chess_plt45.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border-color: transparent;
+}
+.B{
+    height: 100%;
+    width: 100%;
+    background-image: url(../../svgs/Chess_blt45.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border-color: transparent;
+}
+.N{
+    height: 100%;
+    width: 100%;
+    background-image: url(../../svgs/Chess_nlt45.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border-color: transparent;
+}
+.R{
+    height: 100%;
+    width: 100%;
+    background-image: url(../../svgs/Chess_rlt45.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border-color: transparent;
+}
+.Q{
+    height: 100%;
+    width: 100%;
+    background-image: url(../../svgs/Chess_qlt45.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border-color: transparent;
+}
+.K{
+    height: 100%;
+    width: 100%;
+    background-image: url(../../svgs/Chess_klt45.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border-color: transparent;
+}
