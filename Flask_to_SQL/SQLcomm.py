@@ -5,7 +5,7 @@ def initalize_board():
         host="localhost",
         user="root",
         password="Password",
-        database="test_databases"
+        database="chess"
     )
     cursor = conn.cursor()
 
@@ -33,7 +33,7 @@ def get_board():
         host="localhost",
         user="root",
         password="Password",
-        database="test_databases"
+        database="chess"
     )
     cursor = conn.cursor()
     cursor.execute('''
@@ -48,7 +48,7 @@ def clear_board():
         host="localhost",
         user="root",
         password="Password",
-        database="test_databases"
+        database="chess"
     )
     cursor = conn.cursor()
     cursor.execute('''
@@ -62,7 +62,7 @@ def add_move(move):
         host="localhost",
         user="root",
         password="Password",
-        database="test_databases"
+        database="chess"
     )
     cursor = conn.cursor()
 
@@ -92,7 +92,7 @@ def setBoard(position):
         host="localhost",
         user="root",
         password="Password",
-        database="test_databases"
+        database="chess"
     )
     cursor = conn.cursor()
 
