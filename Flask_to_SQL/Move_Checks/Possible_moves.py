@@ -1,3 +1,6 @@
+from turtle import pos
+import Move_Checks.Piece_logic.Black_rook as BlackRook
+import Move_Checks.Piece_logic.White_rook as WhiteRook
 import Move_Checks.Piece_logic.White_pawn as WhitePawn
 import Move_Checks.Piece_logic.Black_pawn as BlackPawn
 import Move_Checks.Piece_logic.Black_knight as BlackKnight
@@ -6,7 +9,8 @@ import Move_Checks.Piece_logic.White_king as WhiteKing
 import Move_Checks.Piece_logic.Black_king as BlackKing
 import Move_Checks.Piece_logic.Black_bishop as BlackBishop
 import Move_Checks.Piece_logic.White_bishop as WhiteBishop
-
+import Move_Checks.Piece_logic.Black_queen as BlackQueen
+import Move_Checks.Piece_logic.White_queen as WhiteQueen
 def Possible_moves(position,location):
     # Splits FEN position into a interable list
     position = position.split(',')
@@ -33,6 +37,10 @@ def Possible_moves(position,location):
                 return BlackKing.Black_king(position, board, location)
             case 'b':
                 return BlackBishop.Black_bishop(position, board, location)
+            case 'r':
+                return BlackRook.Black_rook(position,board,location)
+            case 'q':
+                return BlackQueen.Black_queen(position, board, location)
     # if it is white's turn to move
     elif(position[2].strip()[1:-1]=='w'):
         # check which piece is currently selected
@@ -48,7 +56,10 @@ def Possible_moves(position,location):
                 return WhiteKing.White_king(position, board, location)
             case 'B':
                 return WhiteBishop.White_bishop(position, board, location)
-    
+            case 'R':
+                return WhiteRook.White_rook(position, board, location)
+            case 'Q':
+                return WhiteQueen.White_queen(position, board, location)
     return board
 
 def FenToBoard(board):

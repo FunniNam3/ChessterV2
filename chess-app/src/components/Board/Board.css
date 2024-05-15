@@ -28,8 +28,8 @@
     position:relative;
     border-color: transparent;
     background: transparent;
-    height: calc(80vmin / 8);
-    width: calc(80vmin / 8);
+    height: 10vmin;
+    width: 10vmin;
     z-index: 1;
 }
 
@@ -44,7 +44,7 @@
 
 .TSdot{
     position:relative;
-    bottom: calc(80vmin / 8) ;
+    bottom:10vmin;
     margin: auto;
     aspect-ratio: 1/1;
     border-radius: 50%;

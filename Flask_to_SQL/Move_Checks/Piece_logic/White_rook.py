@@ -1,4 +1,4 @@
-def Black_rook(position, board, location):
+def White_rook(position, board, location):
     # Creates an list to store the possible moves that a piece can make
     possible_moves=[
         ['.','.','.','.','.','.','.','.'],
@@ -22,28 +22,28 @@ def Black_rook(position, board, location):
         if board[x][column]=='.':
             possible_moves[x][column]='m'
         else:
-            if board[x][column].isupper():
+            if board[x][column].islower():
                 possible_moves[x][column]='t'
             break
     for x in range(row+1,8):
         if board[x][column]=='.':
             possible_moves[x][column]='m'
         else:
-            if board[x][column].isupper():
+            if board[x][column].islower():
                 possible_moves[x][column]='t'
             break
     for x in range(column-1,-1,-1):
         if board[row][x]=='.':
             possible_moves[row][x]='m'
         else:
-            if board[row][x].isupper():
+            if board[row][x].islower():
                 possible_moves[row][x]='t'
             break
     for x in range(column+1,8):
         if board[row][x]=='.':
             possible_moves[row][x]='m'
         else:
-            if board[row][x].isupper():
+            if board[row][x].islower():
                 possible_moves[row][x]='t'
             break
 
