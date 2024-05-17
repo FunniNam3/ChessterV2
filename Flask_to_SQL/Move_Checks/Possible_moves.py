@@ -1,3 +1,6 @@
+from turtle import pos
+import Move_Checks.Piece_logic.Black_rook as BlackRook
+import Move_Checks.Piece_logic.White_rook as WhiteRook
 import Move_Checks.Piece_logic.White_pawn as WhitePawn
 import Move_Checks.Piece_logic.Black_pawn as BlackPawn
 import Move_Checks.Piece_logic.Black_knight as BlackKnight
@@ -6,7 +9,8 @@ import Move_Checks.Piece_logic.White_king as WhiteKing
 import Move_Checks.Piece_logic.Black_king as BlackKing
 import Move_Checks.Piece_logic.Black_bishop as BlackBishop
 import Move_Checks.Piece_logic.White_bishop as WhiteBishop
-
+import Move_Checks.Piece_logic.Black_queen as BlackQueen
+import Move_Checks.Piece_logic.White_queen as WhiteQueen
 def Possible_moves(position,location):
     # Splits FEN position into a interable list
     position = position.split(',')
@@ -31,8 +35,15 @@ def Possible_moves(position,location):
             # if black king selected
             case 'k':
                 return BlackKing.Black_king(position, board, location)
+            # if black bishop is selected
             case 'b':
                 return BlackBishop.Black_bishop(position, board, location)
+            # if black rook is selected
+            case 'r':
+                return BlackRook.Black_rook(position,board,location)
+            # if black queen is selected
+            case 'q':
+                return BlackQueen.Black_queen(position, board, location)
     # if it is white's turn to move
     elif(position[2].strip()[1:-1]=='w'):
         # check which piece is currently selected
@@ -46,9 +57,15 @@ def Possible_moves(position,location):
             # if white king
             case 'K':
                 return WhiteKing.White_king(position, board, location)
+            # if white bishop is selected
             case 'B':
                 return WhiteBishop.White_bishop(position, board, location)
-    
+            # if white rook is selected
+            case 'R':
+                return WhiteRook.White_rook(position, board, location)
+            # if white queen is selected
+            case 'Q':
+                return WhiteQueen.White_queen(position, board, location)
     return board
 
 def FenToBoard(board):
