@@ -35,10 +35,13 @@ def Possible_moves(position,location):
             # if black king selected
             case 'k':
                 return BlackKing.Black_king(position, board, location)
+            # if black bishop is selected
             case 'b':
                 return BlackBishop.Black_bishop(position, board, location)
+            # if black rook is selected
             case 'r':
                 return BlackRook.Black_rook(position,board,location)
+            # if black queen is selected
             case 'q':
                 return BlackQueen.Black_queen(position, board, location)
     # if it is white's turn to move
@@ -54,10 +57,13 @@ def Possible_moves(position,location):
             # if white king
             case 'K':
                 return WhiteKing.White_king(position, board, location)
+            # if white bishop is selected
             case 'B':
                 return WhiteBishop.White_bishop(position, board, location)
+            # if white rook is selected
             case 'R':
                 return WhiteRook.White_rook(position, board, location)
+            # if white queen is selected
             case 'Q':
                 return WhiteQueen.White_queen(position, board, location)
     return board
